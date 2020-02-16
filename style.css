@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,800&display=swap");
+body, html {
+  height: 100%;
+}
+
+.zeropadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.redbg {
+  background: #7E1716;
+}
+
+.zeromargin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+h1 {
+  font-family: 'Exo';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Exo';
+  font-weight: 700;
+}
+
+.btn {
+  font-family: 'Exo';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Exo';
+}
+
+.stripe-red-skew {
+  background-color: #222326;
+  color: #F0F0F2;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.stripe-red-skew .text {
+  display: inline-block;
+  position: relative;
+  background-color: #BF2828;
+  padding: 1em;
+  font-family: 'Exo';
+}
+
+.stripe-red-skew .text:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border-left: 70px solid #BF2828;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0px;
+  right: -50px;
+  top: 0;
+}
+
+nav {
+  background-color: #F0F0F2;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+nav .logo-img {
+  height: 4rem;
+}
+
+nav .navbar-nav {
+  padding-right: 5rem;
+}
+
+nav .navbar-nav li .dropdown-menu {
+  background-color: #F0F0F2;
+}
+
+nav .navbar-nav li a {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-family: 'Titillium Web';
+  font-weight: 700;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+main .jumbotron {
+  background-color: #A1A6A5;
+  background-image: url("../assets/whitecars.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #F0F0F2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .jumbotron h1 {
+  margin-bottom: 0;
+}
+
+main .jumbotron .line-1 {
+  font-size: 2.6rem;
+}
+
+main .jumbotron .line-2 {
+  font-size: 3.75rem;
+}
+
+main .jumbotron .line-3 {
+  font-size: 2.75rem;
+}
+
+main .newest-cars {
+  background-color: #F0F0F2;
+  padding-bottom: 1em;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+main .newest-cars .card {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+main .newest-cars .card .card-body {
+  background-color: #F0F0F2 !important;
+}
+
+main .newest-cars .card .card-body h5 {
+  margin-bottom: 0.25rem;
+}
+
+main .skewed {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .skewed .content {
+  width: calc(45% - 49px);
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 50px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+
+main .skewed .content .text {
+  margin-left: 7rem;
+}
+
+main .skewed .image-box {
+  width: calc(55% + 50px);
+  height: 100%;
+  background: #222326;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 100px solid #222326;
+  border-bottom: 400px solid transparent;
+  background-image: url("../assets/microca1.jpg");
+  background-position: -157px -200px;
+  background-repeat: no-repeat;
+}
+
+main .uslugi-2 .usluga-card .innercard {
+  height: 300px;
+  background-color: red;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+main .uslugi-2 .usluga-card .innercard .content h1 {
+  color: #F0F0F2;
+}
+
+main .uslugi-2 .usluga-card .laweta {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("../assets/uslugi/laweta.jpg");
+  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("../assets/uslugi/laweta.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+main .uslugi-2 .usluga-card .slub {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("../assets/uslugi/weddingcar.jpg");
+  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("../assets/uslugi/weddingcar.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+main .usluga-1 {
+  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("../assets/uslugi/umowy.jpg");
+  background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("../assets/uslugi/umowy.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+main .usluga-1 .content {
+  margin-left: 8rem;
+}
+
+main .usluga-1 .content h1 {
+  color: white;
+}
+
+main .contact .contact-section .form-section {
+  background: #222326;
+}
+
+main .contact .contact-section .form-section h3 {
+  color: white;
+  font-family: 'Exo';
+  font-weight: 700;
+}
+
+main .contact .contact-section .info {
+  color: white;
+}
+
+main .contact .contact-section .info p {
+  margin-bottom: 0.25rem;
+}
+
+main .map-section .map {
+  height: 50vh;
+}
+
+main .oferta-page .sidebar-oferta .sidebar-oferta-container .marki-filter, main .oferta-page .sidebar-oferta .sidebar-oferta-container .main-filter {
+  background: white;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+  font-family: 'Exo';
+}
+
+main .oferta-page .sidebar-oferta .sidebar-oferta-container .marki-filter ul, main .oferta-page .sidebar-oferta .sidebar-oferta-container .main-filter ul {
+  list-style-type: none;
+  padding: .4rem;
+}
+
+main .oferta-page .sidebar-oferta .sidebar-oferta-container .main-filter .filter-titles {
+  font-weight: 700;
+}
+
+main .oferta-page .main-section-oferta {
+  font-family: 'Exo';
+}
+
+main .oferta-page .main-section-oferta a {
+  color: black;
+}
+
+main .oferta-page .main-section-oferta a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+main .oferta-page .main-section-oferta a .car-card {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+main .oferta-page .main-section-oferta a .car-card .car-name h5 {
+  color: #7E1716;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+main .oferta-page .main-section-oferta a .car-card .przebieg {
+  font-weight: 600;
+}
+
+main .oferta-page .main-section-oferta a .car-card .car-price {
+  color: #7E1716;
+  font-weight: 600;
+}
+
+main .oferta-page .main-section-oferta a .car-card .car-price p {
+  margin-bottom: 0.1rem;
+}
+
+main .about-us-page img {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+main .contact-page .btn {
+  color: white;
+}
+
+main .contact-page .dark-bg {
+  background: #222326;
+  color: white;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+main .contact-hero {
+  height: 40vh;
+}
+
+footer {
+  -ms-flex-negative: none;
+      flex-shrink: none;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #7E1716;
+  color: white;
+}
+
+footer h5 {
+  font-weight: 700;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul a {
+  font-family: 'Exo';
+  color: white;
+}
+
+footer ul a:hover {
+  color: white;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .usluga-1 .content {
+    margin-left: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .skewed {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("../assets/microca1.jpg") !important;
+    background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("../assets/microca1.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .skewed .image-box {
+    display: none;
+  }
+  .usluga-card .laweta {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .skewed {
+    background: #222326;
+  }
+  .skewed .content {
+    background: #222326;
+  }
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  nav a {
+    padding-top: .75em !important;
+    padding-bottom: .75em !important;
+  }
+}
+
+@media (min-width: 992px) {
+  nav .navbar-nav li {
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
+    margin: 0;
+    padding: .55rem 1em;
+    border-right: 1px solid #A1A6A5;
+  }
+  nav .navbar-nav li .dropdown-menu .dropdown-item {
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
+  }
+  nav .navbar-nav li .dropdown-menu .dropdown-item:hover {
+    background: #BF2828;
+  }
+  nav .navbar-nav li:hover {
+    background-color: #BF2828;
+  }
+  nav .navbar-nav li:first-of-type {
+    border-left: 1px solid #A1A6A5;
+  }
+}
+
+@media (max-width: 1100px) {
+  .skewed .content {
+    padding: 30px 20px !important;
+  }
+  .skewed .content .text {
+    margin-left: 1rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

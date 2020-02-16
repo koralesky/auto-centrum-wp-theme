@@ -1,0 +1,69 @@
+body, html{
+	height:100%;
+}
+
+// EXPORT TO UTILITIES OR SMTH
+.zeropadding{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.redbg{
+	background:$red1;
+}
+
+.zeromargin{
+	margin-left:0 !important;
+	margin-right:0 !important;
+	
+}
+h1{
+	font-family: 'Exo';
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family: 'Exo';
+	font-weight:700;
+	
+}
+
+.btn{
+	font-family: 'Exo';
+	font-weight:700;
+	text-transform:uppercase;
+}
+p{
+	font-family:'Exo';
+}
+
+.stripe-red-skew{
+	background-color:$dark1;
+	color:$light1;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size:1.25em;
+	display:flex;
+	padding:0;
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+	.text{
+		display:inline-block;
+		position:relative;
+		background-color:$red2;
+		padding:1em;
+		font-family:'Exo';
+		&:before{
+			display:inline-block;
+			position: absolute;
+			content:"";
+			border-left: 70px solid $red2;
+			border-bottom: 100px solid transparent;
+			height: 0;
+			width: 0px;
+			right: -50px;
+			top:0;       
+		}
+	}
+
+}

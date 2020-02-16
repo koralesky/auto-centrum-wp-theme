@@ -1,0 +1,116 @@
+//XS WIDTH
+@media (max-width:575px){
+	
+	
+	
+	.usluga-1{
+		.content{
+			margin-left:1rem !important;
+		}
+	}
+}
+
+//Small
+@media(max-width:767px){
+	
+	.skewed{
+		background:
+		linear-gradient(
+				rgba(53, 50, 50, 0.45), 
+				rgba(63, 58, 58, 0.45)
+				),
+		url("../assets/microca1.jpg") !important;
+		background-size:cover !important;
+		background-position:center center !important;
+		.image-box{
+			display:none;
+			
+		}
+	}
+	.usluga-card{
+		.laweta{
+			margin-bottom:1rem;
+		}
+	}
+	
+}
+
+@media(min-width:768px){
+	.skewed{
+    
+    background: $dark1;
+    
+	
+	.content{
+		
+		background: $dark1;
+		
+		}
+	}
+}
+	
+
+@media (min-width:576px){
+.jumbotron{
+    padding: 5rem 2rem;
+}
+}
+
+//Width with Hamburger menu
+@media (max-width:991px){
+	nav{
+		a{
+			padding-top:.75em !important;
+			padding-bottom:.75em !important;
+		}
+	}
+}
+
+//Width without Hamburger Menu
+@media (min-width:992px){
+	nav{
+	.navbar-nav{
+		li{
+			.dropdown-menu{
+				
+				.dropdown-item{
+					transition-duration:.4s;
+					&:hover{
+						background:$red2;
+					}
+				}
+				
+			}
+			transition-duration:.4s;
+			&:hover{
+				background-color:$red2;
+			}
+			margin: 0;
+			padding:.55rem 1em;
+			border-right: 1px solid $dark2;
+			&:first-of-type{
+				border-left: 1px solid $dark2;
+				}
+			}
+		}
+	}
+	
+	
+	
+		
+			
+			
+	
+}
+
+//Query for skewed box
+@media(max-width:1100px){
+	.skewed{
+		.content{
+			padding:30px 20px !important;
+			.text{
+				margin-left:1rem !important;
+			}
+		}
+	}
+}

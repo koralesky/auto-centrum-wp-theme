@@ -1,0 +1,254 @@
+main{
+	flex:1 0 auto;
+    .jumbotron{
+		background-color:$dark2;
+        background-image: url('../assets/whitecars.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color:$light1;
+		font-weight:bold;
+		text-transform: uppercase;
+		h1{
+			margin-bottom:0;
+		}
+		.line-1{
+			font-size:2.6rem;
+		}
+		.line-2{
+			font-size:3.75rem;
+		}
+		.line-3{
+			font-size:2.75rem;
+		}
+    }
+    
+	.newest-cars{
+        background-color:$light1;
+        padding-bottom:1em;
+        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+        .card{
+            box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+            .card-body{
+				background-color: $light1 !important; 
+				h5{
+					margin-bottom:0.25rem;
+				}
+            }
+		}
+		
+        
+	}
+	
+	
+    
+.skewed{
+    position: relative; 
+    height: 400px;
+    width: 100%;
+    display: flex;
+	
+	.content{
+		width: calc(45% - 49px);
+		height: 100%;
+		box-sizing: border-box;
+		padding: 30px 50px;
+		color: #fff;
+		font-family: sans-serif;
+		line-height: 25px;
+		.text{
+			margin-left:7rem;
+		}
+
+	}
+	.image-box{
+		width: calc(55% + 50px);
+		height: 100%;
+		background: $dark1;
+		box-sizing: border-box;
+		border-left: 100px solid $dark1;
+		border-bottom: 400px solid transparent;
+		background-image: url("../assets/microca1.jpg");
+		background-position: -157px -200px;
+		background-repeat: no-repeat;
+    
+    
+	}
+}
+	
+	.uslugi-2{
+		.usluga-card{
+			.innercard{
+				height:300px;
+				background-color:red;
+				background-size:cover;
+				background-position:center center;
+				filter:grayscale(40%);
+				.content{
+					h1{
+						color:$light1;
+					}
+				}
+			}
+			.laweta{
+				background: 
+				/* top, transparent red, faked with gradient */ 
+				linear-gradient(
+				rgba(68, 63, 63, 0.45), 
+				rgba(73, 63, 63, 0.45)
+				),
+				/* bottom, image */
+				url("../assets/uslugi/laweta.jpg");
+				
+				background-size:cover;
+				background-position:center center;
+				
+			}
+			.slub{
+				
+				background:
+				linear-gradient(
+				rgba(68, 63, 63, 0.45), 
+				rgba(73, 63, 63, 0.45)
+				),
+				url("../assets/uslugi/weddingcar.jpg");
+				background-size:cover;
+				background-position:center center;
+			}
+		}
+	}
+
+	.usluga-1{
+		height:400px;
+		background:
+		linear-gradient(
+				rgba(53, 50, 50, 0.45), 
+				rgba(63, 58, 58, 0.45)
+				),
+		url("../assets/uslugi/umowy.jpg");
+		background-size:cover;
+		background-position:center center;
+		.content{
+			margin-left:8rem;
+			h1{
+				color:white;
+			}			
+		}
+	}
+
+	.contact{
+		.contact-section{
+			.form-section{
+				h3{
+					color:white;
+					font-family:'Exo';
+					font-weight:700;
+				}
+				background:$dark1;
+			}
+			.info{
+				color:white;
+				p{
+					margin-bottom:0.25rem;
+				}
+			}
+			
+		}
+	}
+
+	.map-section{
+		.map{
+			height:50vh;
+		}
+	}
+	
+	
+	//OFERTA.HTML
+	
+	.oferta-page{
+		.sidebar-oferta{
+			.sidebar-oferta-container{
+				.marki-filter, .main-filter{
+					background:white;
+					box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+					font-family: 'Exo';
+					ul{
+						list-style-type: none;
+						padding:.4rem;
+					}
+				}
+				
+				.main-filter{
+					.filter-titles{
+						font-weight:700;
+					}
+				}
+				
+			}
+		}
+		.main-section-oferta{
+			font-family:'Exo';
+			a{
+				color:black;
+				&:hover{
+					text-decoration: none;
+					color:black;
+				}
+			
+				.car-card{
+				box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+				.car-name{
+					h5{
+						color:$red1;
+						font-weight:700;
+						margin-bottom:0.25rem;
+					}	
+				}
+				.przebieg{
+						font-weight:600;
+				}
+				.car-price{
+					color:$red1;
+					font-weight:600;
+					p{
+						
+						margin-bottom:0.1rem;
+					}
+					
+				}
+			}
+			}
+			
+			
+		}
+	}
+	
+	//O-NAS.HTML
+	
+	.about-us-page{
+		img{
+			box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+		}
+	}
+	
+	
+	//KONTAKT.HTML
+	.contact-page{
+		
+		.btn{
+			color:white;
+		}
+		.dark-bg{
+			background:$dark1;
+			color:white;
+			box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+		}
+	}
+
+
+	.contact-hero{
+        height:40vh;
+    }
+	
+	
+}
