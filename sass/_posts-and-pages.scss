@@ -112,7 +112,7 @@ main{
 		box-sizing: border-box;
 		border-left: 100px solid $dark1;
 		border-bottom: 400px solid transparent;
-		background-image: url("../assets/microca1.jpg");
+		background-image: url("assets/microca1.jpg");
 		background-position: -157px -200px;
 		background-repeat: no-repeat;
     
@@ -142,7 +142,7 @@ main{
 				rgba(73, 63, 63, 0.45)
 				),
 				/* bottom, image */
-				url("../assets/uslugi/laweta.jpg");
+				url("assets/uslugi/laweta.jpg");
 				
 				background-size:cover;
 				background-position:center center;
@@ -155,7 +155,7 @@ main{
 				rgba(68, 63, 63, 0.45), 
 				rgba(73, 63, 63, 0.45)
 				),
-				url("../assets/uslugi/weddingcar.jpg");
+				url("assets/uslugi/weddingcar.jpg");
 				background-size:cover;
 				background-position:center center;
 			}
@@ -169,7 +169,7 @@ main{
 				rgba(53, 50, 50, 0.45), 
 				rgba(63, 58, 58, 0.45)
 				),
-		url("../assets/uslugi/umowy.jpg");
+		url("assets/uslugi/umowy.jpg");
 		background-size:cover;
 		background-position:center center;
 		.content{
@@ -210,6 +210,25 @@ main{
 	//OFERTA.HTML
 	
 	.oferta-page{
+		ul{
+			list-style-type: none;
+			padding-left:0;
+		}
+		.foogallery{
+			margin-bottom:1rem;
+		}
+
+		.podstawowe-informacje-list{
+			list-style-type:none;
+			columns:1;
+		}
+
+		.szczegolowe-informacje-list{
+			list-style-type:none;
+			columns:3;
+			
+		}
+
 		.sidebar-oferta{
 			.sidebar-oferta-container{
 				.marki-filter, .main-filter{
@@ -304,12 +323,13 @@ main{
 				color:white;
 			}
 		}
-		.uslugi-list{
-			li{
-				
-			}
-		}
+		
 	}
+	
+
+	//POSTS
+
+
 	
 	
 }

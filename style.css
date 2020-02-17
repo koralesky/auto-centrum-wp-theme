@@ -236,7 +236,7 @@ main .skewed .image-box {
           box-sizing: border-box;
   border-left: 100px solid #222326;
   border-bottom: 400px solid transparent;
-  background-image: url("../assets/microca1.jpg");
+  background-image: url("assets/microca1.jpg");
   background-position: -157px -200px;
   background-repeat: no-repeat;
 }
@@ -255,23 +255,23 @@ main .uslugi-2 .usluga-card .innercard .content h1 {
 }
 
 main .uslugi-2 .usluga-card .laweta {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("../assets/uslugi/laweta.jpg");
-  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("../assets/uslugi/laweta.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("assets/uslugi/laweta.jpg");
+  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("assets/uslugi/laweta.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 main .uslugi-2 .usluga-card .slub {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("../assets/uslugi/weddingcar.jpg");
-  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("../assets/uslugi/weddingcar.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 63, 63, 0.45)), to(rgba(73, 63, 63, 0.45))), url("assets/uslugi/weddingcar.jpg");
+  background: linear-gradient(rgba(68, 63, 63, 0.45), rgba(73, 63, 63, 0.45)), url("assets/uslugi/weddingcar.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 main .usluga-1 {
   height: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("../assets/uslugi/umowy.jpg");
-  background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("../assets/uslugi/umowy.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("assets/uslugi/umowy.jpg");
+  background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("assets/uslugi/umowy.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -304,6 +304,27 @@ main .contact .contact-section .info p {
 
 main .map-section .map {
   height: 50vh;
+}
+
+main .oferta-page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main .oferta-page .foogallery {
+  margin-bottom: 1rem;
+}
+
+main .oferta-page .podstawowe-informacje-list {
+  list-style-type: none;
+  -webkit-columns: 1;
+          columns: 1;
+}
+
+main .oferta-page .szczegolowe-informacje-list {
+  list-style-type: none;
+  -webkit-columns: 3;
+          columns: 3;
 }
 
 main .oferta-page .sidebar-oferta .sidebar-oferta-container .marki-filter, main .oferta-page .sidebar-oferta .sidebar-oferta-container .main-filter {

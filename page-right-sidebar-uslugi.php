@@ -14,7 +14,7 @@ get_header();?>
                     </div>
                 </div>
             </div>
-        <?php endif;?>
+<?php endif;?>
 
         <div class="container about-us-page">
       <div class="row my-5 justify-content-around">
