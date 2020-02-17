@@ -1,5 +1,49 @@
 main{
 	flex:1 0 auto;
+	
+	.feature{
+		position:relative;
+		height:45vh;
+		margin:0;
+		.overlay{
+			height:100%;
+			width:100%;
+			position:absolute;
+			background: 
+				/* top, transparent red, faked with gradient */ 
+				linear-gradient(
+				rgba(68, 63, 63, 0.45), 
+				rgba(73, 63, 63, 0.45)
+				),
+		}
+		img{
+			width:100%;
+			height:100%;
+			user-select: none;
+			object-fit:cover;
+
+		}
+		.feature-text{
+			position:absolute;
+			top:0;
+			bottom:0;
+			margin-left: 15vw;
+			user-select: none;
+			&::before{
+				content:'';
+				display:inline-block;
+				height:100%;
+				vertical-align:middle;
+				user-select:none;
+			}
+			h1{
+				display:inline-block;
+				vertical-align:middle;
+				color:white;
+			}
+			
+		}
+	}
     .jumbotron{
 		background-color:$dark2;
         background-image: url('../assets/whitecars.png');
@@ -248,7 +292,24 @@ main{
 
 	.contact-hero{
         height:40vh;
-    }
+	}
+
+	.right-sidebar{
+		color:white;
+		box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+		ul{
+			list-style-type: none;
+			padding:.25rem;
+			a{
+				color:white;
+			}
+		}
+		.uslugi-list{
+			li{
+				
+			}
+		}
+	}
 	
 	
 }
