@@ -43,29 +43,13 @@
         </div>
         <div class="col-md-3">
             <ul class="podstawowe-informacje-list">
-                <?php 
-                        $fields = acf_get_fields('122');
-                
-                if( $fields )
-                {
-                foreach( $fields as $field )
-                {
-                $value = get_field( $field['name'] );
-                
-                if(!empty($value)) {
-                echo '<li>';
-                echo '<dl>';
-                echo '<dt>' . $field['label'] . '</dt>';
-                echo '<dd>' .$value . '</dd>';
-                echo '</dl>';
-                echo '</li>';
-                
-                }
-                
-                }
-                };
-                ?>
-                </ul>
+                <li class="main-name mb-3"><?php the_field('marka_pojazdu')?> <?php the_field('model_pojazdu')?></li>
+                <li class="bullet-info mb-3"><?php the_field('rocznik')?> &bull; <?php the_field('rodzaj_paliwa')?> &bull; <?php the_field('przebieg')?></li>
+                <li class="main-price mb-3"><span><?php the_field('cena')?></span> PLN</li>
+            </ul>
+            <hr class="mb-4">
+            <a href="<?php echo get_home_url();?>/kontakt"><div class="btn call-btn p-3 mb-3">Kontakt w sprawie auta</div></a>
+            <div class="numer-btn text-center p-2"> <i class="fas fa-phone"></i> +48 666 666 666</div>
         </div>
     </div>
 

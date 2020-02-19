@@ -7,7 +7,7 @@
         <div class="feature-text">
             <h1><?php the_field('tekst_glowny');?>
             <br/>
-            <a href="oferta.html">
+            <a href="<?php echo get_home_url(  )?>/oferta/samochody">
                 <div class="btn btn-light">Zobacz ofertę</div>
             </a></h1>
         </div>
@@ -43,10 +43,10 @@ if( $posts ): ?>
 		
 		?>
 	<a class="car-link" href="<?php the_permalink(); ?>">
-        <div class="card"> <img src="<?php the_post_thumbnail_url();?>" class="img-fluid" alt="...">
+        <div class="card"> <img src="<?php the_post_thumbnail_url('front-thumb');?>" class="img-fluid">
               <div class="card-body text-center">
                 <h5 class="card-title"><?php the_title(); ?></h5>
-                <p class="card-text"><?php the_field('cena')?></p>
+                <p class="card-text"><?php the_field('cena')?> PLN</p>
               </div>
             </div>
     </a>
@@ -61,36 +61,6 @@ if( $posts ): ?>
 	<?php wp_reset_postdata(); ?>
 
 <?php endif; ?>
-
-
-            <!-- <div class="card"> <img src="assets/newest-cars-panel/mercedes-benz-gla-class.png" class="card-img-top"
-                alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title">Mercedes GLA200</h5>
-                <p class="card-text">102.203 PLN</p>
-              </div>
-            </div>
-            <div class="card"> <img src="assets/newest-cars-panel/smart-brabus-cabrio-electrique-730x411.png"
-                class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title">Smart Brabus</h5>
-                <p class="card-text">64.900 PLN</p>
-              </div>
-            </div>
-            <div class="card"> <img src="assets/newest-cars-panel/mondeo_02-2.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title">Ford Mondeo</h5>
-                <p class="card-text">48.800 PLN</p>
-              </div>
-            </div>
-            <div class="card"> <img src="assets/newest-cars-panel/due-6-plus-nowy-2020r-kat-am-14-lat-520428299.png"
-                class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title">Microcar M.GO</h5>
-                <p class="card-text">39.990 PLN</p> -->
-              
-            <!-- </div> -->
-          <!-- </div> -->
         </div>
       </div>
       <div class="skewed mb-5">
@@ -100,7 +70,7 @@ if( $posts ): ?>
               microcarów</h1>
             <p>Sprawdź pojazdy dostępne<br />
               w naszej ofercie</p>
-            <a href="oferta.html">
+           <a href="<?php echo get_home_url(  )?>/oferta/microcary">
               <div class="btn btn-light">Zobacz</div>
             </a>
           </div>
@@ -114,7 +84,7 @@ if( $posts ): ?>
               <div class="col-md-12 innercard laweta d-flex align-items-center">
                 <div class="content ml-md-5">
                   <h1>Usługi <br />Auto Laweta</h1>
-                  <div class="btn btn-light">Sprawdź</div>
+                  <a href="<?php echo get_home_url(  )?>/uslugi/auto-laweta"><div class="btn btn-light">Sprawdź</div></a>
                 </div>
               </div>
             </div>
@@ -122,7 +92,7 @@ if( $posts ): ?>
               <div class="col-md-12 innercard slub d-flex align-items-center">
                 <div class="content ml-md-5">
                   <h1>Wynajem auta <br /> do ślubu</h1>
-                  <div class="btn btn-light">Sprawdź</div>
+                  <a href="<?php echo get_home_url(  )?>/uslugi/wynajem-auta-do-slubu"><div class="btn btn-light">Sprawdź</div></a>
                 </div>
               </div>
             </div>
@@ -133,7 +103,7 @@ if( $posts ): ?>
       <div class="row usluga-1 mb-5 zeromargin d-flex align-items-center">
         <div class="content">
           <h1>Kompleksowa rejestracja pojazdów</h1>
-          <div class="btn btn-light">Sprawdź</div>
+          <a href="<?php echo get_home_url(  )?>/uslugi/kompleksowa-rejestracja-pojazdow"><div class="btn btn-light">Sprawdź</div></a>
         </div>
       </div>
 

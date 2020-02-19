@@ -21,68 +21,23 @@ get_header();?>
       <div class="row justify-content-center">
         <div class="col-md-12">
           <div class="row">
-            <!-- <div class="col-md-3 sidebar-oferta">
+          <div class="col-md-3 sidebar-oferta">
               <div class="sidebar-oferta-container">
                 <div class="col-md-12 stripe-red-skew">
-                  <div class="text">Marki</div>
+                  <div class="text">Oferta</div>
                 </div>
                 <div class="col-md-12 marki-filter py-3 mb-4">
                   <ul class="marki-list">
-                    <li>Mercedes</li>
-                    <li>Ford</li>
-                    <li>Microcar</li>
-                    <li>Smart</li>
+                    <a href="<?php echo get_home_url(  )?>/oferta/microcary"><li>Microcary</li></a>
+                    <a href="<?php echo get_home_url(  )?>/oferta/samochody"><li>Samochody</li></a>
+                    
+                    
                   </ul>
                 </div>
               </div>
 
-              <div class="sidebar-oferta-container mb-4">
-                <div class="col-md-12 stripe-red-skew">
-                  <div class="text">Filtr</div>
-                </div>
-                <div class="col-md-12 main-filter py-3">
-                  <div class="row justify-content-between">
-                    <div class="col-3 filter-categories">
-                      <ul class="filter-titles">
-                        <li class="mb-4">Cena</li>
-                        <li class="mb-4">Przebieg</li>
-                        <li class="mb-4">Rocznik</li>
-                        <li>Paliwo</li>
-                      </ul>
-                    </div>
-                    <div class="col-8 filter-categories-content">
-                      <ul class="filter-content">
-                        <li class="mb-1">
-                          <div class="form-row">
-                            <div class="col"><input class="form-control" type="text" placeholder="Od"></div>
-                            <div class="col"><input class="form-control" type="text" placeholder="Do"></div>
-                          </div>
-                        </li>
-                        <li class="mb-1">
-                          <div class="form-row">
-                            <div class="col"><input class="form-control" type="text" placeholder="Od"></div>
-                            <div class="col"><input class="form-control" type="text" placeholder="Do"></div>
-                          </div>
-                        </li>
-                        <li class="mb-1">
-                          <div class="form-row">
-                            <div class="col"><input class="form-control" type="text" placeholder="Od"></div>
-                            <div class="col"><input class="form-control" type="text" placeholder="Do"></div>
-                          </div>
-                        </li>
-                        <li class="mb-1">
-                          <div class="form-row">
-                            <div class="col"><input class="form-control" type="text" placeholder="Od"></div>
-                            <div class="col"><input class="form-control" type="text" placeholder="Do"></div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <div class="col-md-12 main-section-oferta">
+            </div> 
+            <div class="col-md-9 main-section-oferta">
 
 
             <!-- <?php $catquery = new WP_Query( 'cat=4&posts_per_page=5' ); ?>
@@ -126,7 +81,7 @@ if( $posts ): ?>
                         <h5><?php the_title(); ?></h5>
                       </div>
                       <div class="col-4 car-price text-right">
-                        <p><?php the_field('cena')?></p>
+                        <p><?php the_field('cena')?> PLN</p>
                       </div>
                     </div>
                     <div class="row">
@@ -134,7 +89,7 @@ if( $posts ): ?>
                     </div>
                     <div class="row">
                       <div class="col-12">
-                        <p><?php echo mb_strimwidth(get_field('opis'), 0, 400, "...")?></p>
+                        <p><?php echo mb_strimwidth(get_field('opis'), 0, 300, "...")?></p>
                       </div>
 
                     </div>

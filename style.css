@@ -73,6 +73,18 @@ p {
   top: 0;
 }
 
+.ngg-imagebrowser h3 {
+  display: none !important;
+}
+
+.sl-wrapper {
+  z-index: 999999 !important;
+}
+
+.sl-wrapper .sl-caption {
+  display: none !important;
+}
+
 nav {
   background-color: #F0F0F2;
   -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
@@ -191,16 +203,25 @@ main .newest-cars {
           box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
-main .newest-cars .card {
+main .newest-cars a {
+  color: black;
+}
+
+main .newest-cars a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+main .newest-cars a .card {
   -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
-main .newest-cars .card .card-body {
+main .newest-cars a .card .card-body {
   background-color: #F0F0F2 !important;
 }
 
-main .newest-cars .card .card-body h5 {
+main .newest-cars a .card .card-body h5 {
   margin-bottom: 0.25rem;
 }
 
@@ -306,6 +327,10 @@ main .map-section .map {
   height: 50vh;
 }
 
+main .oferta-page {
+  font-family: 'Exo';
+}
+
 main .oferta-page ul {
   list-style-type: none;
   padding-left: 0;
@@ -321,10 +346,48 @@ main .oferta-page .podstawowe-informacje-list {
           columns: 1;
 }
 
+main .oferta-page .podstawowe-informacje-list .main-name {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+main .oferta-page .podstawowe-informacje-list .main-price {
+  color: #7E1716;
+  font-size: 1.25rem;
+}
+
+main .oferta-page .podstawowe-informacje-list .main-price span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+main .oferta-page .call-btn {
+  background-color: #BF2828;
+  color: white;
+  width: 100%;
+}
+
+main .oferta-page .numer-btn {
+  width: 100%;
+  border: #BF2828 solid 2px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+main .oferta-page .numer-btn i {
+  color: #7E1716;
+}
+
 main .oferta-page .szczegolowe-informacje-list {
   list-style-type: none;
   -webkit-columns: 3;
           columns: 3;
+}
+
+main .oferta-page .sidebar-oferta .sidebar-oferta-container a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 main .oferta-page .sidebar-oferta .sidebar-oferta-container .marki-filter, main .oferta-page .sidebar-oferta .sidebar-oferta-container .main-filter {
@@ -455,8 +518,8 @@ footer p {
 
 @media (max-width: 767px) {
   .skewed {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("../assets/microca1.jpg") !important;
-    background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("../assets/microca1.jpg") !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 50, 50, 0.45)), to(rgba(63, 58, 58, 0.45))), url("assets/microca1.jpg") !important;
+    background: linear-gradient(rgba(53, 50, 50, 0.45), rgba(63, 58, 58, 0.45)), url("assets/microca1.jpg") !important;
     background-size: cover !important;
     background-position: center center !important;
   }

@@ -67,3 +67,15 @@ p{
 	}
 
 }
+
+.ngg-imagebrowser{
+	h3{
+		display:none !important;
+	}
+}
+.sl-wrapper{
+	z-index: 999999 !important;
+	.sl-caption{
+		display:none !important;
+	}
+}
