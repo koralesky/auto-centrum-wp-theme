@@ -8,7 +8,7 @@
     </title>
     <?php wp_head();?>
 </head>
-<body class="d-flex flex-column" <?php body_class();?>>
+<body <?php body_class();?>>
 
     <nav class="navbar top-nav navbar-expand-lg navbar-light py-0"> <a class="navbar-brand" href="<?php echo get_home_url();?>"><img
             src="<?php echo get_template_directory_uri() . '/assets/auto-centrum.png';?>" class="logo-img" alt=""></a>
